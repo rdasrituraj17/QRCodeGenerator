@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:label="@string/app_name"
-            android:name=".AppActivity">
+            android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,11 +23,11 @@
         </activity>
         <activity
             android:label="@string/app_name"
-            android:name=".MainActivity">
+            android:name=".Scan">
         </activity>
         <activity
             android:label="@string/app_name"
-            android:name=".App2Activity">
+            android:name=".Generate">
         </activity>
     </application>
 
