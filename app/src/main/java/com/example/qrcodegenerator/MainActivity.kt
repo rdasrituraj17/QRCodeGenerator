@@ -6,8 +6,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : Activity() {
+class MainActivity : AppCompatActivity() {
     var button: Button? = null
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

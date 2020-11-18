@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".Generate">
 
     <ScrollView
@@ -38,6 +39,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Email/Url"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorPrimaryDark"
                 android:textAllCaps="false" />
 
             <Button
@@ -46,6 +49,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="VCard"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorPrimaryDark"
                 android:textAllCaps="false" />
         </LinearLayout>
 
@@ -73,6 +78,8 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="Name"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textColor="@color/colorPrimaryDark"
                     android:inputType="textPersonName" />
 
                 <EditText
@@ -81,6 +88,8 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="Email Address"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textColor="@color/colorPrimaryDark"
                     android:inputType="textEmailAddress" />
 
                 <EditText
@@ -89,6 +98,8 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="Address"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textColor="@color/colorPrimaryDark"
                     android:inputType="textPostalAddress" />
 
 
@@ -98,6 +109,8 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="Phone"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textColor="@color/colorPrimaryDark"
                     android:inputType="phone" />
 
                 <EditText
@@ -106,6 +119,8 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="Website"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textColor="@color/colorPrimaryDark"
                     android:inputType="textWebEditText" />
             </LinearLayout>
 
@@ -116,6 +131,8 @@
                 android:ems="10"
                 android:inputType="text"
                 android:hint="Enter text here"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimaryDark"
                 android:visibility="gone"
 
                 />
@@ -126,6 +143,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Generate QR code"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorPrimaryDark"
                 android:textAllCaps="false"
                 android:visibility="gone"/>
 
@@ -148,6 +167,8 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="Save to gallery"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorPrimaryDark"
                 android:textAllCaps="false"
                 android:layout_gravity="center"
                 android:visibility="gone"/>
