@@ -80,10 +80,6 @@ class Scan : AppCompatActivity() {
     fun checkPermissionForCamera(): Boolean {
 
         val result = ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
-        if (result == PackageManager.PERMISSION_GRANTED) {
-            return true
-        } else {
-            return false
-        }
+        return result == PackageManager.PERMISSION_GRANTED
     }
 }
