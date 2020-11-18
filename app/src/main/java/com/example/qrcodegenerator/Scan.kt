@@ -16,7 +16,7 @@ import com.budiyev.android.codescanner.ScanMode
 
 class Scan : AppCompatActivity() {
     private lateinit var codeScanner: CodeScanner
-    val CAMERA_PERMISSION_REQUEST_CODE = 1
+    private val CAMERA_PERMISSION_REQUEST_CODE = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
