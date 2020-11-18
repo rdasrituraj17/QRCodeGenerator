@@ -85,7 +85,7 @@ class Generate : AppCompatActivity(), View.OnClickListener {
             R.id.btn_save->
             {
                 if (!checkPermissionForExternalStorage()) {
-                    Toast.makeText(this, "External Storage permission needed. Please allow in App Settings for additional functionality.", Toast.LENGTH_LONG).show()
+                    requestPermissionForExternalStorage()
                 }
                 else
                 {
@@ -124,11 +124,7 @@ class Generate : AppCompatActivity(), View.OnClickListener {
     }
     //function for requesting storage access
     fun requestPermissionForExternalStorage() {
-        if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-            Toast.makeText(this, "External Storage permission needed. Please allow in App Settings for additional functionality.", Toast.LENGTH_LONG).show()
-        } else {
-            ActivityCompat.requestPermissions(this, arrayOf<String>(Manifest.permission.WRITE_EXTERNAL_STORAGE), EXTERNAL_STORAGE_PERMISSION_REQUEST_CODE)
-        }
+        ActivityCompat.requestPermissions(this, arrayOf<String>(Manifest.permission.WRITE_EXTERNAL_STORAGE), EXTERNAL_STORAGE_PERMISSION_REQUEST_CODE)
     }
     //fuunction for checking storage permission
     fun checkPermissionForExternalStorage(): Boolean {
